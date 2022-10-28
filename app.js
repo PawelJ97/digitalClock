@@ -20,6 +20,17 @@ function clockUpdate(){
         ph = "PM"
     }
 
+//Add zero before single digit numbers
+    if(hour < 10){
+        hour = "0" + hour
+    }
+    if(min < 10){
+        min = "0" + min
+    }
+    if(sec < 10){
+        sec = "0" + sec
+    }
+
 // Building a arrays to assign the appropriate string to the return value of get.day and get.month - becouse this method returns intiger
     let dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
     let months = ["January", "February", "March", "April"," May"," June", "July", "August", "September"," October", "November", "December"]
